@@ -1,0 +1,1 @@
+<?php function ip(){return $_SERVER["HTTP_X_FORWARDED_FOR"];}function env($en){return $_ENV["{$en}"];}function ip_details($ip){$json=file_get_contents("http://ipinfo.io/{$ip}/geo");$details=json_decode($json);return $details;}function add($file){include $file;}function txt($echo){echo $echo;} ?>
